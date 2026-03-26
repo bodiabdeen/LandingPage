@@ -16,6 +16,19 @@
   }
   html, body { width:100%; height:100%; background:var(--bg); overflow:hidden; cursor:none; }
 
+  /* ── Zoom wrapper ── */
+  #zoom-root {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    transform-origin: center center;
+  }
+  @media (min-width: 700px) {
+    #zoom-root { transform: scale(3); }
+  }
+  @media (max-width: 699px) {
+    #zoom-root { transform: scale(2); }
+  }
+
   #cursor { position:fixed; pointer-events:none; z-index:9999; width:8px; height:8px; border-radius:50%; background:var(--gold-bright); transform:translate(-50%,-50%); mix-blend-mode:screen; }
   #cursor-ring { position:fixed; pointer-events:none; z-index:9998; width:32px; height:32px; border-radius:50%; border:1px solid rgba(201,168,76,0.5); transform:translate(-50%,-50%); transition:width .25s,height .25s,border-color .25s; }
   body:has(.node:hover) #cursor-ring { width:52px; height:52px; border-color:var(--gold-mid); }
@@ -36,7 +49,7 @@
   }
 
   #brand {
-    position:absolute; top:calc(50% + 148px); left:50%; transform:translateX(-50%);
+    position:absolute; top:calc(50% + 118px); left:50%; transform:translateX(-50%);
     text-align:center; z-index:10; animation:fadeUp 1.5s ease forwards; opacity:0;
   }
   #brand h1 { font-family:'Cinzel',serif; font-size:clamp(18px,3vw,28px); font-weight:400; letter-spacing:14px; color:var(--gold-mid); text-transform:uppercase; }
@@ -173,6 +186,13 @@ const detectiveIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="rgba(224,192
   <line x1="11" y1="8" x2="11" y2="14"/>
 </svg>`;
 
+const clubIcon = `<svg viewBox="0 0 24 24" fill="rgba(224,192,80,0.95)" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="8" r="3.5"/>
+  <circle cx="7.5" cy="13" r="3.5"/>
+  <circle cx="16.5" cy="13" r="3.5"/>
+  <path d="M10.5 16 Q12 14 13.5 16 L14.5 20 H9.5 Z"/>
+</svg>`;
+
 const imgIcon = (src) => `<img src="${src}" alt="icon">`;
 
 const services = [
@@ -224,6 +244,13 @@ const services = [
     desc: "A sanctuary of learning for the Isle of Man Islamic community.",
     url: "https://student.abdeen.uk",
     iconHTML: imgIcon(IOM_IMG)
+  },
+  {
+    label: "Precision Bidding Box",
+    sub: "bridge.abdeen.uk",
+    desc: "Precision-engineered digital bidding for the bridge table.",
+    url: "#",
+    iconHTML: clubIcon
   }
 ];
 
@@ -303,6 +330,7 @@ function placeNodes() {
       <div class="node-sub">${svc.sub}</div>
     `;
     el.addEventListener('mouseenter', () => {
+      hoveredNode = true;
       const gem = el.querySelector('.node-gem');
       pcIcon.innerHTML = gem.innerHTML;
       pcTitle.textContent = svc.label;
@@ -310,7 +338,7 @@ function placeNodes() {
       pcDesc.textContent = svc.desc;
       previewCard.classList.add('show');
     });
-    el.addEventListener('mouseleave', () => previewCard.classList.remove('show'));
+    el.addEventListener('mouseleave', () => { hoveredNode = false; previewCard.classList.remove('show'); });
     scene.appendChild(el);
     nodeEls.push(el);
   });
@@ -319,6 +347,7 @@ placeNodes();
 
 // ── Animation loop ──
 let lastTime = 0;
+let hoveredNode = false;
 function animate(ts) {
   const dt = Math.min(ts - lastTime, 50); lastTime = ts;
   const {cx, cy} = getCenter();
@@ -327,7 +356,7 @@ function animate(ts) {
   const n = services.length;
   const gap = (Math.PI * 2) / n;
 
-  trainAngle += TRAIN_SPEED * dt;
+  if (!hoveredNode) trainAngle += TRAIN_SPEED * dt;
 
   const lg = document.getElementById('lines-group');
   if (lg) lg.innerHTML = '';
@@ -390,6 +419,4 @@ function burst(x, y) {
 window.addEventListener('resize', () => { initStars(); placeNodes(); });
 </script>
 
-<div id='contact' style='position:fixed; bottom:50px; left:50%; transform:translateX(-50%); color:var(--gold-bright); font-family:Raleway, sans-serif; font-size:12px; letter-spacing:2px; z-index:9999;'>Contact us: <a href='mailto:support@abdeen.uk' style='color:var(--gold-bright); text-decoration:none;'>support@abdeen.uk</a></div>
-</body>
-</html>
+<div id='contact' style='position:fixed; bottom:50px; left:50%; transform:translateX(-50%); color:var(--gold-bright); font-family:Raleway, sans-serif; font-size:12px; letter-spacing:2px; z-index:9999;'>Contact us: <a href="/cdn-cgi/l/email-protection#3e4d4b4e4e514c4a7e5f5c5a5b5b50104b55" style='color:var(--gold-bright); text-decoration:none;'><spa
