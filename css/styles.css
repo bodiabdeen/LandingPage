@@ -158,13 +158,6 @@ nav {
   );
 }
 
-/* Logomark */
-.hero-logomark {
-  margin-bottom: 36px;
-  opacity: 0;
-  animation: fadeUp 0.8s 0.1s ease forwards;
-}
-
 /* Eyebrow text */
 .hero-eyebrow {
   font-family: 'DM Mono', monospace;
@@ -594,6 +587,27 @@ footer {
 }
 
 /* ── Responsive ─────────────────────────── */
+@media (min-width: 1024px) {
+  #hero {
+    gap: 64px;
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+
+  section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .stat-num {
+    font-size: 36px;
+  }
+
+  .stat-item {
+    padding: 20px 0;
+  }
+}
+
 @media (max-width: 768px) {
   #hero {
     grid-template-columns: 1fr;
