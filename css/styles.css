@@ -96,7 +96,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6vw;
+  padding: 0 max(6vw, calc((100% - 1280px) / 2));
   height: 64px;
   background: rgba(9, 9, 15, 0.82);
   backdrop-filter: blur(16px);
@@ -138,7 +138,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 100px 6vw 80px;
+  padding: 100px max(6vw, calc((100% - 1280px) / 2)) 80px;
   gap: 8vw;
   position: relative;
 }
@@ -295,7 +295,7 @@ h1.hero-title em {
 /* ── Section Base ───────────────────────── */
 section {
   position: relative;
-  padding: 96px 6vw;
+  padding: 96px max(6vw, calc((100% - 1280px) / 2));
 }
 
 section + section {
@@ -548,7 +548,7 @@ section + section {
 
 /* ── Footer ─────────────────────────────── */
 footer {
-  padding: 28px 6vw;
+  padding: 28px max(6vw, calc((100% - 1280px) / 2));
   border-top: 1px solid var(--border);
   display: flex;
   align-items: center;
