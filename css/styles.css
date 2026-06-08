@@ -110,6 +110,16 @@ nav {
   letter-spacing: 1px;
   text-decoration: none;
   cursor: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .nav-links {
@@ -137,10 +147,30 @@ nav {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-rows: auto auto;
+  align-items: start;
+  align-content: center;
   padding: 100px max(6vw, calc((100% - 1280px) / 2)) 80px;
-  gap: 8vw;
+  gap: 48px 64px;
   position: relative;
+}
+
+.hero-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.hero-right {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-stats {
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .hero-vline {
@@ -188,7 +218,7 @@ h1.hero-title em {
 
 /* Sub-heading */
 .hero-sub {
-  margin-top: 22px;
+  margin-top: 0;
   max-width: 430px;
   font-size: 15.5px;
   line-height: 1.78;
@@ -611,8 +641,21 @@ footer {
 @media (max-width: 768px) {
   #hero {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     padding: 90px 6vw 60px;
-    gap: 50px;
+    gap: 32px;
+  }
+
+  .hero-left,
+  .hero-right,
+  .hero-stats {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .hero-sub {
+    margin-top: 0;
+    max-width: 100%;
   }
 
   .hero-vline {

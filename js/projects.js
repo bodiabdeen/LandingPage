@@ -96,7 +96,7 @@ export const projects = [
     desc:  'A web investigation game where strategy meets intelligence — players work through layered clues to crack the case.',
     url:   'cigame.abdeen.uk',
     href:  'https://cigame.abdeen.uk',
-    icon:  GAME_ICON_SVG,
+    icon:  imgIcon('assets/images/cigame.png'),
   },
   {
     group: 'Games',
