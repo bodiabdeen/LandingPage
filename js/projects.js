@@ -37,7 +37,7 @@ export const projects = [
   {
     group: 'IOM Prayer Times',
     title: 'Masjid Display System',
-    desc:  'Real-time prayer display running inside the Isle of Man Islamic Centre — designed for clarity, reliability and beauty.',
+    desc:  'Real-time prayer display running inside the Isle of Man Islamic Centre — designed for clarity, reliability and beauty. Best experienced on large screens; not optimised for mobile.',
     url:   'pttv.abdeen.uk',
     href:  'https://pttv.abdeen.uk',
     icon:  imgIcon('assets/images/iom.png'),
