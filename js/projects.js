@@ -26,7 +26,7 @@ const CLUB_ICON = imgIcon('assets/images/bridge-club.png');
 
 /* ── Colour map for each project group ──────────────────────────────────── */
 export const GROUPS = {
-  'IOM Prayer Times':      { color: '#c8a84b' },
+  'Isle of Man Islamic Centre': { color: '#c8a84b' },
   'Jersey Islamic Centre': { color: '#7ec9a0' },
   'Games':                 { color: '#82c8f0' },
   'Private':               { color: '#d4a5c9' },
@@ -35,7 +35,7 @@ export const GROUPS = {
 /* ── Project list ────────────────────────────────────────────────────────── */
 export const projects = [
   {
-    group: 'IOM Prayer Times',
+    group: 'Isle of Man Islamic Centre',
     title: 'Masjid Display System',
     desc:  'Real-time prayer display running inside the Isle of Man Islamic Centre — designed for clarity, reliability and beauty. Best experienced on large screens; not optimised for mobile.',
     url:   'pttv.abdeen.uk',
@@ -43,7 +43,7 @@ export const projects = [
     icon:  imgIcon('assets/images/iom.png'),
   },
   {
-    group: 'IOM Prayer Times',
+    group: 'Isle of Man Islamic Centre',
     title: 'Prayer Times Backend',
     desc:  'Server infrastructure powering all IOM prayer-time data — calculation engine, API and scheduling.',
     url:   'ptbe.abdeen.uk',
@@ -51,7 +51,7 @@ export const projects = [
     icon:  imgIcon('assets/images/iom.png'),
   },
   {
-    group: 'IOM Prayer Times',
+    group: 'Isle of Man Islamic Centre',
     title: 'Prayer Times — Android',
     desc:  'Native Android app delivering accurate daily prayer times to the Isle of Man Muslim community.',
     url:   'Google Play Store',
@@ -59,7 +59,7 @@ export const projects = [
     icon:  imgIcon('assets/images/iom.png'),
   },
   {
-    group: 'IOM Prayer Times',
+    group: 'Isle of Man Islamic Centre',
     title: 'Prayer Times — iOS',
     desc:  'Native iOS app for IOM prayer times, crafted for iPhone and iPad with an accessible, elegant interface.',
     url:   'App Store',
@@ -67,7 +67,7 @@ export const projects = [
     icon:  imgIcon('assets/images/iom.png'),
   },
   {
-    group: 'IOM Prayer Times',
+    group: 'Isle of Man Islamic Centre',
     title: 'Islamic School Portal',
     desc:  "Digital platform supporting the IOM Masjid's Islamic school — students, schedules and resources in one place.",
     url:   'student.abdeen.uk',
