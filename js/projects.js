@@ -37,14 +37,14 @@ export const projects = [
   {
     group: 'Isle of Man Islamic Centre',
     title: 'Masjid Display System',
-    desc:  'Real-time prayer display running inside the Isle of Man Islamic Centre — designed for clarity, reliability and beauty. Best experienced on large screens; not optimised for mobile.',
+    desc:  'Best experienced on large screens; not optimised for mobile. Real-time prayer display running inside the Isle of Man Islamic Centre — designed for clarity, reliability and beauty.',
     url:   'pttv.abdeen.uk',
     href:  'https://pttv.abdeen.uk',
     icon:  imgIcon('assets/images/iom.png'),
     ar: {
       group: 'المركز الإسلامي في جزيرة مان',
-      title: 'نظام عرض المسجد',
-      desc:  'شاشة عرض مواقيت الصلاة في الوقت الفعلي داخل المركز الإسلامي في جزيرة مان — مُصمَّمة للوضوح والموثوقية والجمال. الأفضل على الشاشات الكبيرة.',
+      title: 'شاشة العرض بالمسجد',
+      desc:  ' أفضل على الشاشات الكبيرة. شاشة عرض مواقيت الصلاة في الوقت الفعلي داخل المركز الإسلامي في جزيرة مان — مُصمَّمة للوضوح والموثوقية والجمال.',
     },
   },
   {
@@ -147,21 +147,21 @@ export const projects = [
     icon:  CLUB_ICON,
     ar: {
       group: 'ألعاب',
-      title: 'بريدج — نادي الدقة',
+      title: 'بريدج — Precision Club',
       desc:  'أداة مرجعية وتدريبية تفاعلية لنظام مزايدة بريدج Precision Club.',
     },
   },
   {
     group: 'Private',
     title: 'Abdeen Family',
-    desc:  'A private, secure digital space built exclusively for the Abdeen family — news, memories and coordination.',
+    desc:  'A private, secure digital space built exclusively for the Abdeen family.',
     url:   'family.abdeen.uk',
     href:  'https://family.abdeen.uk',
     icon:  imgIcon('assets/images/family.png'),
     ar: {
       group: 'خاص',
-      title: 'عائلة عبدين',
-      desc:  'مساحة رقمية خاصة وآمنة مبنية حصريًا لعائلة عبدين — أخبار وذكريات وتنسيق.',
+      title: 'عائلة عابدين',
+      desc:  'مساحة رقمية خاصة وآمنة مبنية حصريًا لعائلة عابدين.',
     },
   },
 ];
