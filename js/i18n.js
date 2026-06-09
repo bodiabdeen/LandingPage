@@ -25,7 +25,7 @@ export const translations = {
     'contact.lbl.specialisms': 'Specialisms',
     'contact.val.specialisms': 'Mobile Apps · Islamic Tech · Web Platforms',
     'footer.copy':             '© 2025 abdeen.uk · All rights reserved',
-    'lang.toggle':             'AR',
+    'lang.toggle':             'عربي',
   },
   ar: {
     'nav.projects':            'المشاريع',
@@ -48,6 +48,6 @@ export const translations = {
     'contact.lbl.specialisms': 'التخصصات',
     'contact.val.specialisms': 'تطبيقات الجوّال · التقنية الإسلامية · منصات الويب',
     'footer.copy':             '© 2025 abdeen.uk · جميع الحقوق محفوظة',
-    'lang.toggle':             'EN',
+    'lang.toggle':             'English',
   },
 };

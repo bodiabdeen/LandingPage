@@ -588,23 +588,25 @@ footer {
 
 /* ── Language Toggle ────────────────────── */
 .lang-toggle {
-  font-family: 'DM Mono', monospace;
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--muted);
-  background: none;
-  border: 1px solid var(--border2);
-  border-radius: 2px;
-  padding: 5px 11px;
+  font-family: 'Cairo', 'DM Mono', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--gold);
+  background: var(--gold-dim);
+  border: 1px solid rgba(200, 168, 75, 0.45);
+  border-radius: 4px;
+  padding: 6px 14px;
   cursor: none;
-  transition: color 0.2s, border-color 0.2s;
+  transition: background 0.22s, border-color 0.22s, color 0.22s;
   flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .lang-toggle:hover {
+  background: rgba(200, 168, 75, 0.28);
   border-color: var(--gold);
-  color: var(--gold);
+  color: var(--gold-lt);
 }
 
 /* ── RTL / Arabic overrides ─────────────── */
