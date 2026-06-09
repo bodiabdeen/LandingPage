@@ -41,6 +41,11 @@ export const projects = [
     url:   'pttv.abdeen.uk',
     href:  'https://pttv.abdeen.uk',
     icon:  imgIcon('assets/images/iom.png'),
+    ar: {
+      group: 'المركز الإسلامي في جزيرة مان',
+      title: 'نظام عرض المسجد',
+      desc:  'شاشة عرض مواقيت الصلاة في الوقت الفعلي داخل المركز الإسلامي في جزيرة مان — مُصمَّمة للوضوح والموثوقية والجمال. الأفضل على الشاشات الكبيرة.',
+    },
   },
   {
     group: 'Isle of Man Islamic Centre',
@@ -49,6 +54,11 @@ export const projects = [
     url:   'ptbe.abdeen.uk',
     href:  'https://ptbe.abdeen.uk',
     icon:  imgIcon('assets/images/iom.png'),
+    ar: {
+      group: 'المركز الإسلامي في جزيرة مان',
+      title: 'خادم مواقيت الصلاة',
+      desc:  'البنية التحتية للخادم التي تُشغِّل جميع بيانات مواقيت الصلاة في جزيرة مان — محرك الحساب والواجهة البرمجية والجدولة.',
+    },
   },
   {
     group: 'Isle of Man Islamic Centre',
@@ -57,6 +67,11 @@ export const projects = [
     url:   'Google Play Store',
     href:  'https://play.google.com/store/apps/details?id=com.iomprayertimes',
     icon:  imgIcon('assets/images/iom.png'),
+    ar: {
+      group: 'المركز الإسلامي في جزيرة مان',
+      title: 'مواقيت الصلاة — أندرويد',
+      desc:  'تطبيق أندرويد أصلي يُقدِّم مواقيت الصلاة اليومية الدقيقة لمجتمع المسلمين في جزيرة مان.',
+    },
   },
   {
     group: 'Isle of Man Islamic Centre',
@@ -65,6 +80,11 @@ export const projects = [
     url:   'App Store',
     href:  'https://apps.apple.com/gb/app/iom-prayer-times/id6758450458',
     icon:  imgIcon('assets/images/iom.png'),
+    ar: {
+      group: 'المركز الإسلامي في جزيرة مان',
+      title: 'مواقيت الصلاة — iOS',
+      desc:  'تطبيق iOS أصلي لمواقيت صلاة جزيرة مان، مُصمَّم للآيفون والآيباد بواجهة أنيقة وسهلة الاستخدام.',
+    },
   },
   {
     group: 'Isle of Man Islamic Centre',
@@ -73,6 +93,11 @@ export const projects = [
     url:   'student.abdeen.uk',
     href:  'https://student.abdeen.uk',
     icon:  imgIcon('assets/images/iom.png'),
+    ar: {
+      group: 'المركز الإسلامي في جزيرة مان',
+      title: 'بوابة المدرسة الإسلامية',
+      desc:  'منصة رقمية تدعم مدرسة المسجد الإسلامي في جزيرة مان — الطلاب والجداول الدراسية والموارد في مكان واحد.',
+    },
   },
   {
     group: 'Jersey Islamic Centre',
@@ -81,6 +106,11 @@ export const projects = [
     url:   'jic-prayer-times.web.app',
     href:  'https://jic-prayer-times.web.app/',
     icon:  imgIcon('assets/images/jersey.png'),
+    ar: {
+      group: 'المركز الإسلامي في جيرسي',
+      title: 'خادم مواقيت صلاة جيرسي',
+      desc:  'بنية تحتية مخصصة لمواقيت الصلاة للمركز الإسلامي في جيرسي — موثوقة ومُختبَرة وتخدم مجتمع جيرسي.',
+    },
   },
   {
     group: 'Jersey Islamic Centre',
@@ -89,6 +119,11 @@ export const projects = [
     url:   'App Store',
     href:  'https://apps.apple.com/ae/app/jic-prayer-times/id6760294481',
     icon:  imgIcon('assets/images/jersey.png'),
+    ar: {
+      group: 'المركز الإسلامي في جيرسي',
+      title: 'مواقيت صلاة جيرسي — iOS',
+      desc:  'تطبيق iOS مُتقَن يُقدِّم مواقيت صلاة المركز الإسلامي في جيرسي لمجتمع المسلمين المحلي على الآيفون.',
+    },
   },
   {
     group: 'Games',
@@ -97,6 +132,11 @@ export const projects = [
     url:   'cigame.abdeen.uk',
     href:  'https://cigame.abdeen.uk',
     icon:  imgIcon('assets/images/cigame.png'),
+    ar: {
+      group: 'ألعاب',
+      title: 'لعبة المحقق الجنائي',
+      desc:  'لعبة تحقيق ويب حيث تلتقي الاستراتيجية بالذكاء — يعمل اللاعبون على تحليل الأدلة المتراكمة لكشف القضية.',
+    },
   },
   {
     group: 'Games',
@@ -105,6 +145,11 @@ export const projects = [
     url:   'bridge.abdeen.uk',
     href:  'https://bridge.abdeen.uk',
     icon:  CLUB_ICON,
+    ar: {
+      group: 'ألعاب',
+      title: 'بريدج — نادي الدقة',
+      desc:  'أداة مرجعية وتدريبية تفاعلية لنظام مزايدة بريدج Precision Club.',
+    },
   },
   {
     group: 'Private',
@@ -113,5 +158,10 @@ export const projects = [
     url:   'family.abdeen.uk',
     href:  'https://family.abdeen.uk',
     icon:  imgIcon('assets/images/family.png'),
+    ar: {
+      group: 'خاص',
+      title: 'عائلة عبدين',
+      desc:  'مساحة رقمية خاصة وآمنة مبنية حصريًا لعائلة عبدين — أخبار وذكريات وتنسيق.',
+    },
   },
 ];

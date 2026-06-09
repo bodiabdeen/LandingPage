@@ -1,0 +1,53 @@
+/**
+ * i18n.js
+ * Translation strings for English and Arabic.
+ */
+
+export const translations = {
+  en: {
+    'nav.projects':            'Projects',
+    'nav.contact':             'Contact',
+    'hero.eyebrow':            'Software · Mobile · Islamic Tech',
+    'hero.title':              'Building products<br>that <em>matter.</em>',
+    'hero.sub':                'A portfolio of live software serving real communities — from Islamic prayer-time infrastructure across the British Isles, to games, tools, and private family platforms. Each product crafted with precision and purpose.',
+    'hero.cta.primary':        'View Projects',
+    'hero.cta.ghost':          'Get in Touch',
+    'stat.apps':               'Live mobile apps',
+    'stat.communities':        'Island communities served',
+    'stat.projects':           'Production projects',
+    'stat.detail':             'Attention to detail',
+    'sec.projects':            'Projects',
+    'sec.contact':             'Contact',
+    'contact.tagline':         'Have a project in mind, or want to <em>collaborate</em> on something meaningful?',
+    'contact.note':            'Open to discussions around Islamic tech, mobile app development, and bespoke web platforms.',
+    'contact.lbl.email':       'Email',
+    'contact.lbl.website':     'Website',
+    'contact.lbl.specialisms': 'Specialisms',
+    'contact.val.specialisms': 'Mobile Apps · Islamic Tech · Web Platforms',
+    'footer.copy':             '© 2025 abdeen.uk · All rights reserved',
+    'lang.toggle':             'AR',
+  },
+  ar: {
+    'nav.projects':            'المشاريع',
+    'nav.contact':             'تواصل',
+    'hero.eyebrow':            'برمجيات · تطبيقات · تقنية إسلامية',
+    'hero.title':              'نبني منتجات<br>لها <em>معنى.</em>',
+    'hero.sub':                'محفظة برمجيات نشطة تخدم مجتمعات حقيقية — من بنية تحتية لمواقيت الصلاة الإسلامية في جزر بريطانية، إلى ألعاب وأدوات ومنصات عائلية خاصة. كل منتج مُصنَّع بدقة وهدف.',
+    'hero.cta.primary':        'استعرض المشاريع',
+    'hero.cta.ghost':          'تواصل معنا',
+    'stat.apps':               'تطبيقات جوّال نشطة',
+    'stat.communities':        'مجتمعات جزرية نخدمها',
+    'stat.projects':           'مشاريع إنتاجية',
+    'stat.detail':             'اهتمام بالتفاصيل',
+    'sec.projects':            'المشاريع',
+    'sec.contact':             'تواصل',
+    'contact.tagline':         'هل لديك مشروع في الذهن، أو تريد <em>التعاون</em> في شيء ذي معنى؟',
+    'contact.note':            'منفتح على النقاشات حول التقنية الإسلامية وتطوير تطبيقات الجوّال ومنصات الويب المخصصة.',
+    'contact.lbl.email':       'البريد الإلكتروني',
+    'contact.lbl.website':     'الموقع الإلكتروني',
+    'contact.lbl.specialisms': 'التخصصات',
+    'contact.val.specialisms': 'تطبيقات الجوّال · التقنية الإسلامية · منصات الويب',
+    'footer.copy':             '© 2025 abdeen.uk · جميع الحقوق محفوظة',
+    'lang.toggle':             'EN',
+  },
+};

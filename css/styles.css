@@ -586,6 +586,69 @@ footer {
   }
 }
 
+/* ── Language Toggle ────────────────────── */
+.lang-toggle {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--border2);
+  border-radius: 2px;
+  padding: 5px 11px;
+  cursor: none;
+  transition: color 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.lang-toggle:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ── RTL / Arabic overrides ─────────────── */
+[dir="rtl"] body,
+[dir="rtl"] .hero-sub,
+[dir="rtl"] .card-desc,
+[dir="rtl"] .contact-note,
+[dir="rtl"] .contact-val {
+  font-family: 'Cairo', sans-serif;
+}
+
+[dir="rtl"] h1.hero-title,
+[dir="rtl"] .contact-tagline,
+[dir="rtl"] .sec-title,
+[dir="rtl"] .footer-brand,
+[dir="rtl"] .card-title {
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 0;
+}
+
+[dir="rtl"] .hero-eyebrow,
+[dir="rtl"] .nav-links a,
+[dir="rtl"] .lang-toggle,
+[dir="rtl"] .btn,
+[dir="rtl"] .stat-label,
+[dir="rtl"] .sec-num,
+[dir="rtl"] .card-group,
+[dir="rtl"] .card-url,
+[dir="rtl"] .contact-lbl,
+[dir="rtl"] .footer-copy {
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+[dir="rtl"] .sec-rule {
+  margin-left: 0;
+  margin-right: 14px;
+}
+
+[dir="rtl"] .proj-card:hover .card-arrow {
+  transform: translate(-2px, -2px);
+}
+
 /* ── Responsive ─────────────────────────── */
 @media (min-width: 1024px) {
   #hero {
