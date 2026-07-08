@@ -22,8 +22,6 @@ const GAME_ICON_SVG = `
   </svg>
 `;
 
-const CLUB_ICON = imgIcon('assets/images/bridge-club.png');
-
 /* ── Colour map for each project group ──────────────────────────────────── */
 export const GROUPS = {
   'Isle of Man Islamic Centre': { color: '#c8a84b' },
@@ -114,6 +112,19 @@ export const projects = [
   },
   {
     group: 'Jersey Islamic Centre',
+    title: 'JIC Prayer Times — Android',
+    desc:  'Native Android app delivering accurate daily prayer times to the Jersey Muslim community.',
+    url:   'Google Play Store',
+    href:  'https://play.google.com/store/apps/details?id=com.jicprayertimes&pcampaignid=web_share',
+    icon:  imgIcon('assets/images/jersey.png'),
+    ar: {
+      group: 'المركز الإسلامي في جيرسي',
+      title: 'مواقيت صلاة جيرسي — أندرويد',
+      desc:  'تطبيق أندرويد أصلي يُقدِّم مواقيت الصلاة اليومية الدقيقة لمجتمع المسلمين في جيرسي.',
+    },
+  },
+  {
+    group: 'Jersey Islamic Centre',
     title: 'JIC Prayer Times — iOS',
     desc:  'Polished iOS app delivering Jersey Islamic Centre prayer times to the local Muslim community on iPhone.',
     url:   'App Store',
@@ -136,19 +147,6 @@ export const projects = [
       group: 'ألعاب',
       title: 'لعبة المحقق الجنائي',
       desc:  'لعبة تحقيق ويب حيث تلتقي الاستراتيجية بالذكاء — يعمل اللاعبون على تحليل الأدلة المتراكمة لكشف القضية.',
-    },
-  },
-  {
-    group: 'Games',
-    title: 'Bridge — Precision Club',
-    desc:  'Interactive reference and training tool for the Precision Club bridge bidding system.',
-    url:   'bridge.abdeen.uk',
-    href:  'https://bridge.abdeen.uk',
-    icon:  CLUB_ICON,
-    ar: {
-      group: 'ألعاب',
-      title: 'بريدج — Precision Club',
-      desc:  'أداة مرجعية وتدريبية تفاعلية لنظام مزايدة بريدج Precision Club.',
     },
   },
   {
