@@ -153,15 +153,15 @@ export const projects = [
   },
   {
     group: 'Games',
-    title: 'Bridge — Precision Club',
-    desc:  'Interactive reference and training tool for the Precision Club bridge bidding system.',
+    title: 'Bridge — Manx Diamond',
+    desc:  'Partnership reference for the Manx Diamond bridge bidding system.',
     url:   'bridge.abdeen.uk',
     href:  'https://bridge.abdeen.uk',
     icon:  CLUB_ICON,
     ar: {
       group: 'ألعاب',
-      title: 'بريدج — Precision Club',
-      desc:  'أداة مرجعية وتدريبية تفاعلية لنظام مزايدة بريدج Precision Club.',
+      title: 'بريدج — Manx Diamond',
+      desc:  'مرجع تشاركي لنظام مزايدة بريدج Manx Diamond.',
     },
   },
   {
