@@ -10,8 +10,6 @@ function imgIcon(src) {
   return `<img src="${src}" alt="">`;
 }
 
-const CLUB_ICON = imgIcon('assets/images/Bridge.png');
-
 const GAME_ICON_SVG = `
   <svg viewBox="0 0 24 24" fill="none"
        stroke="rgba(130,200,255,0.9)" stroke-width="1.5"
@@ -150,19 +148,6 @@ export const projects = [
       group: 'ألعاب',
       title: 'لعبة المحقق الجنائي',
       desc:  'لعبة تحقيق ويب حيث تلتقي الاستراتيجية بالذكاء — يعمل اللاعبون على تحليل الأدلة المتراكمة لكشف القضية.',
-    },
-  },
-  {
-    group: 'Games',
-    title: 'Bridge — Manx Diamond',
-    desc:  'Partnership reference for the Manx Diamond bridge bidding system.',
-    url:   'bridge.abdeen.uk',
-    href:  'https://bridge.abdeen.uk',
-    icon:  CLUB_ICON,
-    ar: {
-      group: 'ألعاب',
-      title: 'بريدج — Manx Diamond',
-      desc:  'مرجع تشاركي لنظام مزايدة بريدج Manx Diamond.',
     },
   },
   {
