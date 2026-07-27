@@ -29,6 +29,7 @@ export const GROUPS = {
   'Isle of Man Islamic Centre': { color: '#c8a84b' },
   'Jersey Islamic Centre': { color: '#7ec9a0' },
   'Games':                 { color: '#82c8f0' },
+  'Daira':                 { color: '#9b7fd4' },
   'Private':               { color: '#d4a5c9' },
 };
 
@@ -162,6 +163,19 @@ export const projects = [
       group: 'ألعاب',
       title: 'بريدج — Manx Diamond',
       desc:  'مرجع تشاركي لنظام مزايدة بريدج Manx Diamond.',
+    },
+  },
+  {
+    group: 'Daira',
+    title: 'Daira',
+    desc:  'A private, invite-only space for one group at a time — family, friends or a small team — to organise shared expenses, calendars, tasks, trip plans and documents, completely separate from every other group.',
+    url:   'daira.abdeen.uk',
+    href:  'https://daira.abdeen.uk',
+    icon:  imgIcon('assets/images/daira.png'),
+    ar: {
+      group: 'دايرة',
+      title: 'دايرة',
+      desc:  'مساحة خاصة بالدعوة فقط لمجموعة واحدة في كل مرة — عائلة أو أصدقاء أو فريق صغير — لتنظيم النفقات المشتركة والتقويم والمهام وخطط الرحلات والمستندات، بشكل منفصل تمامًا عن أي مجموعة أخرى.',
     },
   },
   {
